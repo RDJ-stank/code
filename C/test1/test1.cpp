@@ -14,7 +14,7 @@ void inverse(sqlist *L, int n){
 	for(i=1,j=n;i<j;i++,j--){
 		x=L->data[i-1];
 		L->data[i-1]=L->data[j-1];
-		L->data[j-1]=x;
+		L->data[j]=x;
 	}
 }
 
